@@ -57,7 +57,7 @@ nav {
 
 nav ul {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 0;
     padding: 5px 1%;
     justify-content: center;
@@ -89,14 +89,23 @@ nav a:focus {
     background-color: var(--um-maize);
     color: var(--um-blue);
     border-left: 10px solid var(--um-blue);
-    /* outline:none; */
+    outline:none;
 }
 
 nav a.active:hover,
 nav a.active:focus {
-    /* outline: none; */
+    outline: none;
     background-color: var(--um-maize);
 }
+
+/* main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+} */
 
 main {
     display: grid;
@@ -136,17 +145,13 @@ section p, section ul, section ol {
     grid-column: 1/5;
 }
 
-.visual img {
+.visual img, .visual iframe, .visual video {
     grid-column: 2/-1;
 }
 
 img, iframe, video {
     width: 100%;
     height: auto;
-}
-
-section video, section iframe, .video-container {
-    grid-column: 1/-1;
 }
 
 .popular-resources h3 {
