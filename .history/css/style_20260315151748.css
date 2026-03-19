@@ -266,10 +266,6 @@ footer a {
         grid-column: 1/-1;
         columns: 2;
     }
-
-    #main section:last-child:nth-of-type(2n+1) {
-        grid-column: 1/-1;
-    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -278,12 +274,31 @@ footer a {
         padding: 40px 8%;
     }
 
-    #main section.visual {
-        grid-column: span 2;
+    #main section:nth-child(odd),
+    #main section:nth-child(even) {
+        grid-column: auto;
     }
 
-    #main section:last-child:nth-child(5),
-    #main section:last-child:nth-child(6) {
-        grid-column: span 3;
+    section {
+        padding: 30px;
+    }
+
+    .visual {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .visual img {
+        grid-column: 1/-1;
+    }
+
+    .visual p,
+    .visual ul,
+    .visual ol {
+        grid-column: 1/-1;
+    }
+
+    .popular-resources ul {
+        grid-column: 1/-1;
+        columns: 2;
     }
 }

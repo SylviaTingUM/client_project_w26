@@ -266,24 +266,4 @@ footer a {
         grid-column: 1/-1;
         columns: 2;
     }
-
-    #main section:last-child:nth-of-type(2n+1) {
-        grid-column: 1/-1;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    main {
-        grid-template-columns: repeat(3, 1fr);
-        padding: 40px 8%;
-    }
-
-    #main section.visual {
-        grid-column: span 2;
-    }
-
-    #main section:last-child:nth-child(5),
-    #main section:last-child:nth-child(6) {
-        grid-column: span 3;
-    }
 }
