@@ -77,10 +77,11 @@ nav a {
     display: block;
     text-align: center;
     font-weight: bold;
+    /* border-left: 10px solid transparent; */
     box-sizing: border-box;
     margin: 8px 4px;
     border:2px solid transparent;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 nav a.active {

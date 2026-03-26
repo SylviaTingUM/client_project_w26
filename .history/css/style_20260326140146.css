@@ -24,8 +24,7 @@ h3 {
 h1 {
     grid-column: 1 / -1;
     font-size: 2.5rem;
-    margin-top: 50px;
-    text-align: center;
+    margin-top: 30px;
 }
 
 h2 {
@@ -77,16 +76,15 @@ nav a {
     display: block;
     text-align: center;
     font-weight: bold;
+    /* border-left: 10px solid transparent; */
     box-sizing: border-box;
-    margin: 8px 4px;
-    border:2px solid transparent;
-    border-radius: 5px;
+    margin: 5px 0;
 }
 
 nav a.active {
     background-color: var(--um-maize);
     color: var(--um-blue);
-    border: 2px solid var(--um-blue);
+    border-left: 10px solid var(--um-blue);
     text-decoration: underline;
 }
 
@@ -94,7 +92,8 @@ nav a:hover,
 nav a:focus {
     background-color: var(--um-maize);
     color: var(--um-blue);
-    border: 2px solid var(--um-blue);
+    border-left: 10px solid var(--um-blue);
+    border-right: 10px solid var(--um-blue);
 }
 
 nav a.active:hover,
@@ -139,37 +138,6 @@ section ol {
     grid-column: 1/-1;
 }
 
-section ul,
-section ol {
-    margin-left:20px;
-    padding-right:10px;
-}
-
-section li {
-    margin-bottom:18px;
-    line-height: 1.5;
-}
-
-section ul li a {
-    display: inline-block;
-    margin-bottom: 4px;
-    font-weight: bold;
-    color: var(--um-blue);
-    text-decoration: underline;
-    text-underline-offset: 2px;
-}
-
-section li strong {
-    color: var(--um-blue);
-    display: inline-block;
-    margin-bottom: 2px;
-}
-
-section ul li a:hover {
-    color: #004b8d;
-    background-color: rgba(180, 198, 240, 0.1);
-}
-
 .visual p,
 .visual ul,
 .visual ol {
@@ -177,8 +145,7 @@ section ul li a:hover {
 }
 
 .visual img {
-    grid-column: 1/-1;
-    margin-bottom: 25px;
+    grid-column: 2/-1;
 }
 
 img,
@@ -211,7 +178,7 @@ iframe,
 }
 
 header img {
-    width: 30%;
+    width: 40%;
     max-width: 200px;
     height: auto;
     display: block;
@@ -267,10 +234,6 @@ footer a {
 
     nav {
         width: 100%;
-    }
-
-    nav a {
-        margin: 0 5px;
     }
 
     main {

@@ -80,7 +80,7 @@ nav a {
     box-sizing: border-box;
     margin: 8px 4px;
     border:2px solid transparent;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 nav a.active {

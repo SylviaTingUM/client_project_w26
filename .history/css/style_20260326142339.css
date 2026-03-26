@@ -63,7 +63,9 @@ nav ul {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0;
-    padding: 5px 1%;
+    /* padding: 5px 1%; */
+    padding: 0;
+    margin: 0;
     justify-content: center;
     align-items: center;
     list-style: none;
@@ -77,16 +79,16 @@ nav a {
     display: block;
     text-align: center;
     font-weight: bold;
+    /* border-left: 10px solid transparent; */
     box-sizing: border-box;
-    margin: 8px 4px;
-    border:2px solid transparent;
-    border-radius: 5px;
+    /* margin: 5px 0; */
 }
 
 nav a.active {
     background-color: var(--um-maize);
     color: var(--um-blue);
-    border: 2px solid var(--um-blue);
+    border-left: 10px solid var(--um-blue);
+    border-right: 5px solid var(--um-blue);
     text-decoration: underline;
 }
 
@@ -94,7 +96,8 @@ nav a:hover,
 nav a:focus {
     background-color: var(--um-maize);
     color: var(--um-blue);
-    border: 2px solid var(--um-blue);
+    border-left: 10px solid var(--um-blue);
+    border-right: 5px solid var(--um-blue);
 }
 
 nav a.active:hover,
@@ -211,7 +214,7 @@ iframe,
 }
 
 header img {
-    width: 30%;
+    width: 40%;
     max-width: 200px;
     height: auto;
     display: block;
